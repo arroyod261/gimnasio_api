@@ -1,10 +1,10 @@
 'use strict';
 
 const express = require('express');
-const router_1 = express.Router();
+const router = express.Router();
 const Usuario = require('../models/usuario.model');
 
-router_1.post('/registra-usuario', (req, res) => {
+router.post('/registrar-usuario', (req, res) => {
     let usuario = new Usuario({
         cedula: req.body.cedula,
         nombre: req.body.nombre,
